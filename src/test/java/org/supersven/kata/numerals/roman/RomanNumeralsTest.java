@@ -68,4 +68,13 @@ public class RomanNumeralsTest {
 
         assertThat(roman).isEqualTo("IX");
     }
+
+    @Test
+    public void should_convert_10() {
+        int arabic = 10;
+
+        String roman = RomanNumerals.convert(arabic);
+
+        assertThat(roman).isEqualTo("X");
+    }
 }

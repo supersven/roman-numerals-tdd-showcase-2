@@ -5,6 +5,11 @@ public class RomanNumerals {
     public static String convert(int arabic) {
         String result = "";
 
+        if (arabic == 10) {
+            result = "X";
+            arabic = arabic - 10;
+        }
+
         if (arabic == 9) {
             result = "IX";
             arabic = arabic - 9;
