@@ -41,10 +41,18 @@ public class RomanNumerals {
     }
 
     public static String convert(int arabic) {
+        assertInputRange(arabic);
+
+        return convertToRomanNumeralString(arabic);
+    }
+
+    private static void assertInputRange(int arabic) {
         if (arabic < 1 || arabic > 4999) {
             throw new IllegalArgumentException("input range: [1,4999]");
         }
+    }
 
+    private static String convertToRomanNumeralString(int arabic) {
         String result = "";
 
         for (RomanNumeral numeral : romanNumerals) {
