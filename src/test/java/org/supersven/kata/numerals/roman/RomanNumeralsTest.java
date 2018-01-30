@@ -104,4 +104,13 @@ public class RomanNumeralsTest {
 
         assertThat(roman).isEqualTo("XV");
     }
+
+    @Test
+    public void should_convert_19() {
+        int arabic = 19;
+
+        String roman = RomanNumerals.convert(arabic);
+
+        assertThat(roman).isEqualTo("XIX");
+    }
 }

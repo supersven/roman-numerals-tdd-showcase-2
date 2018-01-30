@@ -11,7 +11,7 @@ public class RomanNumerals {
         }
 
         if (arabic == 9) {
-            result = "IX";
+            result = result + "IX";
             arabic = arabic - 9;
         }
 
