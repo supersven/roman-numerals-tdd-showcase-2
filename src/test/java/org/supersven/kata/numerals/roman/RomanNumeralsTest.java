@@ -32,4 +32,13 @@ public class RomanNumeralsTest {
 
         assertThat(roman).isEqualTo("III");
     }
+
+    @Test
+    public void should_convert_4() {
+        int arabic = 4;
+
+        String roman = RomanNumerals.convert(arabic);
+
+        assertThat(roman).isEqualTo("IV");
+    }
 }
