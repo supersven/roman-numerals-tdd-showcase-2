@@ -140,4 +140,13 @@ public class RomanNumeralsTest {
 
         assertThat(roman).isEqualTo("L");
     }
+
+    @Test
+    public void should_convert_90() {
+        int arabic = 90;
+
+        String roman = RomanNumerals.convert(arabic);
+
+        assertThat(roman).isEqualTo("XC");
+    }
 }
