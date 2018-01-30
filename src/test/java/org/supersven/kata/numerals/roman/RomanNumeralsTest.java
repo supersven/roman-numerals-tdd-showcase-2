@@ -131,4 +131,13 @@ public class RomanNumeralsTest {
 
         assertThat(roman).isEqualTo("XL");
     }
+
+    @Test
+    public void should_convert_50() {
+        int arabic = 50;
+
+        String roman = RomanNumerals.convert(arabic);
+
+        assertThat(roman).isEqualTo("L");
+    }
 }
