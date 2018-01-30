@@ -10,22 +10,22 @@ public class RomanNumerals {
             arabic = arabic - 10;
         }
 
-        if (arabic == 9) {
+        while (arabic >= 9) {
             result = result + "IX";
             arabic = arabic - 9;
         }
 
-        if (arabic >= 5) {
+        while (arabic >= 5) {
             result = result + "V";
             arabic = arabic - 5;
         }
 
-        if (arabic == 4) {
+        while (arabic >= 4) {
             result = result + "IV";
             arabic = arabic - 4;
         }
 
-        while (arabic > 0) {
+        while (arabic >= 1) {
             result = result + "I";
             arabic = arabic - 1;
         }
