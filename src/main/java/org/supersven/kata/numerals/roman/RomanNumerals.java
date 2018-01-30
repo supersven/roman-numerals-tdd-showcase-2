@@ -5,7 +5,7 @@ public class RomanNumerals {
     public static String convert(int arabic) {
         String result = "";
 
-        if (arabic == 5) {
+        if (arabic >= 5) {
             result = "V";
             arabic = arabic - 5;
         }
