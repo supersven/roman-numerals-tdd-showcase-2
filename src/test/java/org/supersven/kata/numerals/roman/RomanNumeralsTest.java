@@ -41,4 +41,13 @@ public class RomanNumeralsTest {
 
         assertThat(roman).isEqualTo("IV");
     }
+
+    @Test
+    public void should_convert_5() {
+        int arabic = 5;
+
+        String roman = RomanNumerals.convert(arabic);
+
+        assertThat(roman).isEqualTo("V");
+    }
 }
