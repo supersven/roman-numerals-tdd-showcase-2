@@ -14,4 +14,13 @@ public class RomanNumeralsTest {
 
         assertThat(roman).isEqualTo("I");
     }
+
+    @Test
+    public void should_convert_2() {
+        int arabic = 2;
+
+        String roman = RomanNumerals.convert(arabic);
+
+        assertThat(roman).isEqualTo("II");
+    }
 }
