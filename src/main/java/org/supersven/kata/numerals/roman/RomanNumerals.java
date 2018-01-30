@@ -21,7 +21,7 @@ public class RomanNumerals {
         }
 
         if (arabic == 4) {
-            result = "IV";
+            result = result + "IV";
             arabic = arabic - 4;
         }
 
