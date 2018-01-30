@@ -194,4 +194,11 @@ public class RomanNumeralsTest {
 
         assertThat(roman).isEqualTo("M");
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void should_not_convert_lower_than_1() {
+        int arabic = 0;
+
+        RomanNumerals.convert(arabic);
+    }
 }

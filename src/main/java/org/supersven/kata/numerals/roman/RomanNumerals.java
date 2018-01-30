@@ -41,6 +41,10 @@ public class RomanNumerals {
     }
 
     public static String convert(int arabic) {
+        if (arabic < 1) {
+            throw new IllegalArgumentException("input range: [1,]");
+        }
+
         String result = "";
 
         for (RomanNumeral numeral : romanNumerals) {
