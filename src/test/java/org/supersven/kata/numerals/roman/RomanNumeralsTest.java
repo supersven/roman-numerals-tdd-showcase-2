@@ -7,7 +7,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class RomanNumeralsTest {
 
     @Test
-    public void testFrameworkWorks() {
-        assertThat(true).isTrue();
+    public void should_convert_1() {
+        int arabic = 1;
+
+        String roman = RomanNumerals.convert(arabic);
+
+        assertThat(roman).isEqualTo("I");
     }
 }
