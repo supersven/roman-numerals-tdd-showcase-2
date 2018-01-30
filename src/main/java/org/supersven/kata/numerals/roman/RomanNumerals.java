@@ -3,14 +3,23 @@ package org.supersven.kata.numerals.roman;
 public class RomanNumerals {
 
     public static String convert(int arabic) {
+        String result = "";
+
         if (arabic == 3) {
-            return "III";
+            result = result + "I";
+            arabic = arabic - 1;
         }
 
         if (arabic == 2) {
-            return "II";
+            result = result + "I";
+            arabic = arabic - 1;
         }
 
-        return "I";
+        if (arabic == 1) {
+            result = result + "I";
+            arabic = arabic - 1;
+        }
+
+        return result;
     }
 }
