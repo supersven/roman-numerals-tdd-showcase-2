@@ -167,4 +167,13 @@ public class RomanNumeralsTest {
 
         assertThat(roman).isEqualTo("CD");
     }
+
+    @Test
+    public void should_convert_500() {
+        int arabic = 500;
+
+        String roman = RomanNumerals.convert(arabic);
+
+        assertThat(roman).isEqualTo("D");
+    }
 }
