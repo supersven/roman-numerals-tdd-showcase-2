@@ -6,6 +6,7 @@ import java.util.List;
 public class RomanNumerals {
 
     private static final List<RomanNumeral> romanNumerals = Arrays.asList(
+            new RomanNumeral("CM", 900),
             new RomanNumeral("D", 500),
             new RomanNumeral("CD", 400),
             new RomanNumeral("C", 100),

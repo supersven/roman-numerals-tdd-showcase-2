@@ -176,4 +176,13 @@ public class RomanNumeralsTest {
 
         assertThat(roman).isEqualTo("D");
     }
+
+    @Test
+    public void should_convert_900() {
+        int arabic = 900;
+
+        String roman = RomanNumerals.convert(arabic);
+
+        assertThat(roman).isEqualTo("CM");
+    }
 }
