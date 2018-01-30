@@ -185,4 +185,13 @@ public class RomanNumeralsTest {
 
         assertThat(roman).isEqualTo("CM");
     }
+
+    @Test
+    public void should_convert_1000() {
+        int arabic = 1000;
+
+        String roman = RomanNumerals.convert(arabic);
+
+        assertThat(roman).isEqualTo("M");
+    }
 }
