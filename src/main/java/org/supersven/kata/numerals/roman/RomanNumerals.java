@@ -5,8 +5,8 @@ public class RomanNumerals {
     public static String convert(int arabic) {
         String result = "";
 
-        if (arabic >= 10) {
-            result = "X";
+        while (arabic >= 10) {
+            result = result + "X";
             arabic = arabic - 10;
         }
 
