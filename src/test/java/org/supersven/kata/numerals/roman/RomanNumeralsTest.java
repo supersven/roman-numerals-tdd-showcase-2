@@ -59,4 +59,13 @@ public class RomanNumeralsTest {
 
         assertThat(roman).isEqualTo("VI");
     }
+
+    @Test
+    public void should_convert_9() {
+        int arabic = 9;
+
+        String roman = RomanNumerals.convert(arabic);
+
+        assertThat(roman).isEqualTo("IX");
+    }
 }
