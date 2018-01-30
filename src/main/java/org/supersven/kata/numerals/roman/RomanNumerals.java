@@ -41,8 +41,8 @@ public class RomanNumerals {
     }
 
     public static String convert(int arabic) {
-        if (arabic < 1) {
-            throw new IllegalArgumentException("input range: [1,]");
+        if (arabic < 1 || arabic > 4999) {
+            throw new IllegalArgumentException("input range: [1,4999]");
         }
 
         String result = "";

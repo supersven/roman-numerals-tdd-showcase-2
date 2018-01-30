@@ -201,4 +201,11 @@ public class RomanNumeralsTest {
 
         RomanNumerals.convert(arabic);
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void should_not_convert_bigger_than_4999() {
+        int arabic = 5000;
+
+        RomanNumerals.convert(arabic);
+    }
 }
