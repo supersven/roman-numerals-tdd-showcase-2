@@ -95,4 +95,13 @@ public class RomanNumeralsTest {
 
         assertThat(roman).isEqualTo("XIV");
     }
+
+    @Test
+    public void should_convert_15() {
+        int arabic = 15;
+
+        String roman = RomanNumerals.convert(arabic);
+
+        assertThat(roman).isEqualTo("XV");
+    }
 }

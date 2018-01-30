@@ -16,7 +16,7 @@ public class RomanNumerals {
         }
 
         if (arabic >= 5) {
-            result = "V";
+            result = result + "V";
             arabic = arabic - 5;
         }
 
