@@ -31,11 +31,11 @@ public class RomanNumerals {
             this.arabic = arabic;
         }
 
-        String getSymbol() {
-            return symbol;
-        }
-
-        int getArabic() {
+        int countAndAppend(int arabic, StringBuilder result) {
+            while (arabic >= this.arabic) {
+                result.append(symbol);
+                arabic = arabic - this.arabic;
+            }
             return arabic;
         }
     }
@@ -53,15 +53,12 @@ public class RomanNumerals {
     }
 
     private static String convertToRomanNumeralString(int arabic) {
-        String result = "";
+        StringBuilder result = new StringBuilder();
 
         for (RomanNumeral numeral : romanNumerals) {
-            while (arabic >= numeral.getArabic()) {
-                result = result + numeral.getSymbol();
-                arabic = arabic - numeral.getArabic();
-            }
+            arabic = numeral.countAndAppend(arabic, result);
         }
 
-        return result;
+        return result.toString();
     }
 }
